@@ -1,0 +1,181 @@
+.header {
+  margin: 0;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  //   background-color: crimson;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+  &__link-courses,
+  &__link-login {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__link-courses {
+    position: relative;
+    margin-right: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    &::before{
+      content: "";
+      width: 0;
+      height: 1.5px;
+      background:$color-text-primary;
+      position:absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      transition: all 0.4s ease;
+    }
+
+    &:hover::before{
+      width: 100%;
+    }
+  }
+
+  &__link--contact{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+    margin-right: 28px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__theme--btn{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 4px 6px;
+    margin: 0 28px 0 0;
+    width: 70px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  &__link--icon{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+ 
+
+  &__link-login {
+    padding: 9px 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    transition: all 0.4s ease;
+    width: 107px;
+    border: 1px solid $color-text-primary;
+    box-sizing: border-box;
+    border-radius: 120px;
+
+    &:hover{
+      color: $color-white;
+      background: $color-text-primary;
+    }
+  }
+
+  &__burger--btn{
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 21px;
+    height: 18px;
+    background-image: url("../../../public/img/burger-btn.svg");
+    background-size: 100% 100%;
+  }
+
+  &__item--burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // header
+}
+
+
+@media screen and(max-width:768px){
+  .header{
+    &__burger--btn{
+      display: flex;
+    }
+
+    &__item:nth-child(2){
+      display: none;
+    }
+  }
+
+}
+
+@media screen and(max-width:500px){
+  .header{
+    &__logo{
+      width: 94px;
+      height: 28px;
+    }
+
+    &__theme--btn{
+      width: 56px;
+      height: 26px;
+      
+  
+    }
+
+    &__theme--moon-icon{
+      font-size: 15px !important;  
+    }
+
+    &__theme--sun-icon{
+      font-size: 19px !important;  
+    }
+
+    &__link-login {
+      padding: 5px 20px;
+    }
+  }
+
+}

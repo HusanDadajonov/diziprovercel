@@ -1,0 +1,242 @@
+.our-courses{
+    padding-bottom: 72px;
+
+    &__title{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        margin: 0 0 40px 0;
+    }   
+
+    &__img{
+        margin-bottom: 20px;
+        border-radius: 10px;    
+    }
+    &__info--wrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__clock--icon{
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+    }
+
+    &__dot{
+        margin: 0 6px
+    }
+
+    &__clock{
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+    }
+    
+    &__desc{
+        max-width: 100% ;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        opacity: 0.8;
+        margin: 0 0 20px 0;
+    }
+
+    &__subtitle{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-text-primary;
+        opacity: 0.6;
+        margin: 0 0 8px 0;
+    }
+
+
+    &__card--list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__card--desc{
+        width: 300px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-text-primary;
+        margin: 0;
+    }
+
+    &__card--item{
+        margin-bottom: 16px;
+        display: flex;
+
+        &::before{
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $color-text-primary;
+            margin-right: 6px;
+            transform: translateY(10px);
+        }
+    }
+
+    &__card--title{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        color: $color-text-primary;
+        margin: 0 0 10px 0;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      
+    }
+
+    &__item{
+        transition: all 0.4s ease;
+        position: relative;
+        width: 384px;
+        padding: 12px 12px 20px 12px;
+        border: 1.5px solid #d9d9d9;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &:not(:last-child){
+            margin-right: 24px;
+     
+        }
+
+        &:hover{
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            & button{
+                background: #6600E9;;
+                color: $color-white;   
+                border-color: #6600E9; 
+            }
+        }
+    }
+
+    &__card--wrap{
+        width: 336px;
+        margin: 0 auto;
+    }
+
+    &__btn{
+        margin: 0 auto;
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $color-text-primary;
+        width: 100%;
+        border: 1.5px solid $color-text-primary;
+        box-sizing: border-box;
+        border-radius: 12px;
+        background: transparent;
+        transition: all 0.4s ease;
+        padding: 9px 0;
+        cursor: pointer;
+    }
+
+
+    &__info--account{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__info--avatart{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__info--name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;  
+        color: #fff;
+        margin-left: 6px;
+        opacity: 0.8;
+    }
+    &__clock--icon,
+    &__clock{
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width:856px){
+    .our-courses{
+        &__item{
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (max-width:856px){
+    .our-courses{
+        &__item{
+            width: 320px;
+        }
+    }
+}
+
+
+@media screen and (max-width:704px){
+    .our-courses{
+        &__item{
+            width: 500px;
+            margin-right: 0 !important;
+        }
+
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:652px){
+    .our-courses{
+        &__item{
+            width: 100%;
+        }
+
+        &__title{
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:410px){
+    .our-courses{
+        &__item{
+            width: 320px;
+        }
+    }
+}

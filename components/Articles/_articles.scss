@@ -1,0 +1,151 @@
+.articles {
+  padding: 72px 0;
+  padding-bottom: 144px;
+  border-radius: 10px;
+}
+
+.articles__header {
+  h3 {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    color: #000000;
+  }
+}
+
+.articles__header-landing {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.articles__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articles__item {
+  margin: 0;
+  padding: 0;
+  max-width: 578px;
+  height: 193px;
+  display: flex;
+  background: #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 26px;
+  transition: all 0.4s ease;
+
+  &:hover{
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+
+    img{
+      transform: scale(1.2) rotate(5deg);
+      // transform: rotate(10deg);
+    }
+  }
+
+  &:not(:last-child){
+    margin-right: 24px;
+  }
+}
+
+.articles__item-img {
+  margin: 0;
+  transition: all 0.4s ease;
+  padding: 0;
+  width:100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.articles__img--wrap{
+  border-radius: 12px;
+  overflow: hidden;
+  width: 257px;
+  margin-right: 20px;
+  height: 193px;
+}
+
+.articles__item-infos {
+  max-width: 301px;
+  padding: 16px 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articles__item-title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  max-width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  text-overflow: ellipsis;
+  //   overflow: hidden;
+}
+
+.articles__item-text {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 97px;
+  font-style: normal;
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.articles__item-date {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1284px){
+  .articles__list{
+    flex-direction: column;
+  }
+
+  .articles__item{
+    margin-right: 0 !important;
+  }
+}
+
+
+@media screen and (max-width:666px){
+  .articles{
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+

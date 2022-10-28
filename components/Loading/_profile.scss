@@ -1,0 +1,147 @@
+.profile {
+  padding-top: 36px;
+}
+
+
+
+.profile__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.01em;
+  color: $color-text-primary;
+}
+
+.profile__info {
+  width: 976px;
+}
+
+.profile__info-top {
+  @include flex-row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 32px 27px 32px 48px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px #E9E9E9;
+  border-radius: 4px;
+}
+
+.profile__user-info {
+  @include flex-row;
+  max-width: 650px;
+}
+
+.profile__user-img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-right: 16px;
+}
+
+.profile__user-name-id {
+  @include flex-column;
+  align-items: flex-start;
+}
+
+.profile__user-name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text-primary;
+}
+
+.profile__user-id {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.profile__logout-link {
+  @include flex-row;
+  padding: 9px 20px;
+  background: #FDF3F3;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-danger;
+  text-decoration: none;
+  transition: 0.5s ease background-color;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background-image: url("../../public/img/icon-logout.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+    display: block;
+  }
+
+  &:hover {
+    background-color: #FBE8E8;
+    color:$color-danger;
+  }
+}
+
+
+
+.profil__list {
+  @include list-unstyled;
+  @include flex-row;
+  align-items: stretch;
+}
+
+.profil__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 212px;
+  min-height: 82px;
+  padding: 16px;
+  background-color: $color-white;
+  border: 1px solid $color-disabled;
+  border-radius: 4px;
+  flex-shrink: 0;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &:first-child {
+    width: 292px;
+  }
+
+}
+
+.profil__item-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.75);
+  word-break: break-word;
+}
+
+.profil__item-txt {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text-primary;
+  word-break: break-all;
+}
+
+.profil__item-address {
+  font-size: 14px;
+  line-height: 19px;
+}
+

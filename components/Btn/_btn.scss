@@ -1,0 +1,57 @@
+.btn {
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-brand;
+  border-radius: 120px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease background-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $color-light-grey;
+    background-color: $color-disabled;
+  }
+
+  &:disabled .btn__anime {
+    display: none;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  &--responding {
+    cursor: not-allowed;
+  }
+}
+
+.btn__anime {
+  display: none;
+  margin: auto;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+.btn--responding .btn__anime  {
+  display: block;
+}
+
+.btn--responding .btn__txt {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

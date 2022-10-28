@@ -1,0 +1,256 @@
+.hero{
+    padding-bottom: 64px;
+    padding-top: 143px;
+
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+    }
+
+    &__title{
+        max-width: 558px;
+        margin: 0 0 20px 0;
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 60px;
+        letter-spacing: -0.02em;
+        color: $color-text-primary;
+        position: relative;
+    }
+
+    &__col{
+        &:nth-child(2){
+            width: 55%;
+            padding-left: 20px;
+        }
+
+        &:nth-child(1){
+            width: 45%;
+            height: 540px;
+           
+        }
+    }
+
+    &__img--warpper{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 624px;
+        height: 624px;
+        background: rgba(255, 200, 200, 0.18);
+        box-shadow: inset 0px 4px 16px 4px rgba(255, 102, 102, 0.12);
+        border-radius: 0px 0 190px 0px;
+        overflow: hidden;
+
+        &::before{
+            content: "";
+            width: 794px;
+            height: 750px;
+            background-image: url("/img/hero-img.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position:absolute;
+            left: -50px;
+            top: -30px;
+        }
+    }
+
+    &__img{
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__desc{
+        margin: 0 0 28px 0;
+        max-width: 457px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-text-primary;
+    }
+
+    &__btn{
+        padding: 12px 48px;
+        background: $color-brand;
+        border-radius: 120px;
+        border: 1px solid transparent;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: $color-white;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        border: 1px solid transparent;
+
+        &:hover{
+            border-color: $color-brand;
+            background: transparent;
+            color: $color-brand ;
+        }
+    }
+}
+@media screen and (max-width:1394px){
+    .hero{
+        &__col{
+            &:nth-child(2){
+                padding-left: 80px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1274px){
+    .hero{
+
+        &__title{
+            max-width: 563px;
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1220px){
+    .hero{
+        padding-bottom:64px !important;
+        padding-top: 80px;
+
+        &__col:nth-child(1){
+            height: auto;
+        }
+        
+        &__title{
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        &__desc{
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__btn{
+            padding: 12px 48px;
+        }
+
+        &__img--warpper{
+            width: 360px;
+            height: 384px;
+
+            &::before{
+                width: 500px;
+                height: 450px;
+            }
+        }
+
+        &__col{
+            width: 100% !important;
+
+            &:nth-child(2){
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:770px){
+    .hero{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:624px){
+    .hero{
+        padding-bottom: 0;
+
+        &__img{
+            max-width: 100%;
+            height: 562px;     
+            object-fit: cover; 
+        }
+        
+    }
+}
+
+@media screen and (max-width:540px){
+    .hero{
+        padding-bottom: 0;
+
+     
+        &__col{
+            &:nth-child(2){
+                padding-left: 0;
+            }
+
+            
+        }
+    }
+}
+@media screen and(max-width:610px){
+    .hero{
+        padding-bottom: 0 !important;
+
+        &__wrap{
+            flex-direction: column;
+        }
+
+        &__col:nth-child(1){
+            height: 300px;
+        }
+
+        &__title{
+            margin-bottom: 10px ;
+        }
+
+        &__desc{
+            margin-bottom: 10px;
+        }
+
+       
+
+        &__title{
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+        }
+
+        &__col:nth-child(2){
+            margin-bottom: 0;
+        }
+
+        &__img--warpper{
+            width: 100%;
+            height: 362px;
+
+            &::before{
+                width: 500px;
+                height: 439px;
+            }
+        }
+
+        
+    }
+  
+}
+@media screen and (max-width:440px){
+    .hero{
+      
+
+        &__col{
+            &:nth-child(2){
+                height: 340px;
+            }
+        }
+
+        &__btn{
+            width: 100%;
+        }
+    }
+}

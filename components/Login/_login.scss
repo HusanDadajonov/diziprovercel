@@ -1,0 +1,114 @@
+.login {
+  height: 100vh;
+  background-color: $color-white;
+  background-image: url("../../public/img/login-bg.png");
+  background-image: image-set(
+    url(../../public/img/login-bg.png) 1x,
+    url(../../public/img/login-bg@2x.png) 2x,
+  );  
+  background-repeat: no-repeat;
+  background-position: calc(50% + 400px) 80px;
+  background-size: 490px 588px;
+}
+
+.login__container {
+  width: 100%;
+  height: 100%;
+}
+
+.login__content {
+  width: 436px;
+  padding-top:  40px;
+}
+
+.login__welcome {
+  @include flex-column;
+  align-items: flex-start;
+  margin-bottom: 77px;
+}
+
+.login__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.01em;
+  color: $color-text-primary;
+}
+
+.login__desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.login__form {
+  @include flex-column;
+  align-items: stretch;
+  margin-bottom: 70px;
+}
+
+.login__form-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color-text-primary;
+}
+
+.login__input {
+  width: 100%;
+  padding: 16px 30px;
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 120px;
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.login__submit-btn {
+  width: 100%;
+  padding: 16px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-brand;
+  border-radius: 120px;
+  border: none;
+  cursor: pointer
+}
+
+.login__external-link {
+  @include flex-row;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: $color-text-primary;
+  text-decoration: none;
+
+  &::after {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../public/img/icon-external-link.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+    display: block;
+    margin-left: 12px;
+  }
+}
+
+

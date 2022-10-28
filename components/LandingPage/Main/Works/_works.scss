@@ -1,0 +1,153 @@
+.works{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    &__item{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+
+       
+    }
+
+    &__img{
+        height: 380px;
+        margin-bottom: 15px;
+        border-radius: 24px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__person{
+        display: flex;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #efefef
+    }
+
+    &__person--avatar{
+        margin-right: 10px;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    &__person--name{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+        color:  $color-text-primary;
+    }
+
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        opacity: 0.8;
+        color:  $color-text-primary;
+        margin: 0;
+    }
+
+    &__title{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color:  $color-text-primary;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+
+    &__item--small .works__img{
+        height: 216px;
+    }
+
+    // &__item:nth-child(4),
+    // &__item:nth-child(6){
+    //     transform: translateY(-165px);
+    // }
+
+}
+
+
+@media screen and(max-width: 1015px){
+    .works{
+
+        &__item--small .works__img{
+            height: 122px;
+        }
+
+        &__img{
+            height: 216px;
+        }
+
+        &__person--avatar{
+            width: 32px;
+            height: 32px;
+        }
+
+        &__person--name{
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        &__desc{
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+        &__item--wrap{
+            height: 275px;
+        }
+
+        &__item--small{
+            height: 181px;
+            
+        }
+    }
+}
+
+
+@media screen and(max-width: 700px){
+    .works{
+
+        &__item--small .works__img{
+            height: 91px;
+        }
+
+        &__img{
+            height: 162px;
+            margin-bottom: 12px;
+        }
+
+      
+
+        &__person--name{
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+     
+
+        &__item--wrap{
+            height: 236px;
+        }
+
+        &__item--small{
+            height: 165px;
+        }
+    }
+}
+
+
