@@ -28,7 +28,6 @@ export const lightTheme = {
     heroBg:"#fff",
     accardionOpen:"#FAFAFA",
     accarionOpenBorder:"#d9d9d9",
-    aboutProject:"#FCFCFC",
     accardionOpen:"#FAFAFA"
 }
 
@@ -40,7 +39,7 @@ export const  darkTheme = {
     textColor:"#fff",
     borderColor:"#fff",
     bg:"#111114",
-    aboutBg:"#1A1A1A",
+    aboutBg:"#1f1f1f",
     logo:"/img/dark-logo.svg",
     cardBg:"#0d0d0d",
     courseItemBorderColor:"#333",
@@ -60,7 +59,6 @@ export const  darkTheme = {
     heroBg:"#1E0F0F",
     accardionOpen:"#1A1A1A",
     accarionOpenBorder:"#333",
-    aboutProject:"#1f1f1f",
     accardionOpen:"#1A1A1A"
 }
 
@@ -178,9 +176,7 @@ export const GlobalStyles = createGlobalStyle`
         border-color:${props => props.theme.accarionOpenBorder};
     }
 
-    .about-project__col:nth-child(2){
-        background:${props => props.theme.socialMediaBg} !important;
-    }
+ 
     
     .MuiAccordionSummary-expandIconWrapper svg{
         color: ${props => props.theme.textColor}
