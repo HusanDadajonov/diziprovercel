@@ -27,7 +27,9 @@ export const lightTheme = {
     sliderRightArrow:"./img/right-arrow.svg",
     heroBg:"#fff",
     accardionOpen:"#FAFAFA",
-    accarionOpenBorder:"2px solid #d9d9d9"
+    accarionOpenBorder:"#d9d9d9",
+    aboutProject:"#FCFCFC",
+    accardionOpen:"#FAFAFA"
 }
 
 export const  darkTheme = {
@@ -57,9 +59,11 @@ export const  darkTheme = {
     sliderRightArrow:"./img/right-arrow-dark.svg",
     heroBg:"#1E0F0F",
     accardionOpen:"#1A1A1A",
-    accarionOpenBorder:"2px solid #333"
-
+    accarionOpenBorder:"#333",
+    aboutProject:"#1f1f1f",
+    accardionOpen:"#1A1A1A"
 }
+
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -125,7 +129,7 @@ export const GlobalStyles = createGlobalStyle`
         border-color:${props => props.theme.commentsCardBorderColor}
     }
 
-    .accordion {
+    .MuiAccordion-root   {
         border-color:${props => props.theme.accardionBorderColor}
     }
 
@@ -169,10 +173,19 @@ export const GlobalStyles = createGlobalStyle`
         border-color:${props => props.theme.commentsCardBorderColor} !important;  
     }
 
-    .accardion-open{
-        background:${props => props.theme.socialMediaBg};
-        border:${props => props.theme.accarionOpenBorder};
+    .accardion_open{
+        background:${props => props.theme.accardionOpen} !important;
+        border-color:${props => props.theme.accarionOpenBorder};
     }
+
+    .about-project__col:nth-child(2){
+        background:${props => props.theme.socialMediaBg};
+    }
+    
+    .MuiAccordionSummary-expandIconWrapper svg{
+        color: ${props => props.theme.textColor}
+    }
+
 
   
 `

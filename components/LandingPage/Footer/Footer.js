@@ -6,6 +6,9 @@ const Footer = () => {
 
   const consts = useSelector(selectOneModel)
   const data = consts?.data?.find((constant)=> constant.key === "phone_number")
+  const INSTAGRAM_LINK = consts?.data?.find((constant)=> constant.key === "instagram_link")
+  const TELEGRAM_LINK = consts?.data?.find((constant)=> constant.key === "telegram_link")
+  const YOUTUBE_LINK = consts?.data?.find((constant)=> constant.key === "youtube_link")
 
   return (
     <div className="footer global__bg">
@@ -26,13 +29,13 @@ const Footer = () => {
 
               <ul className="footer__social-medias__list">
                 <li className="footer__social-medias__item">
-                  <a className="footer__social-medias__instagram-link" href="#"></a>
+                  <a target="_blank" className="footer__social-medias__instagram-link" href={INSTAGRAM_LINK?.value}></a>
                 </li>
                 <li className="footer__social-medias__item">
-                  <a className="footer__social-medias__telegram-link" href="#"></a>
+                  <a target="_blank" className="footer__social-medias__telegram-link" href={TELEGRAM_LINK?.value}></a>
                 </li>
                 <li className="footer__social-medias__item">
-                  <a className="footer__social-medias__youtube-link" href="#"></a>
+                  <a target="_blank" className="footer__social-medias__youtube-link" href={YOUTUBE_LINK?.value}></a>
                 </li>
               </ul>
             </div>

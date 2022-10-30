@@ -6,7 +6,9 @@ function AboutProject() {
   const ABOUT_TITLE = consts?.data?.find((constant)=> constant.key === "about_title")
   const ABOUT_DESCRIPTION = consts?.data?.find((constant)=> constant.key === "about_description")
 
-  console.log(consts);
+
+  console.log(ABOUT_DESCRIPTION?.value);
+
 
   return (
     <section id="about" className=" about-project">
