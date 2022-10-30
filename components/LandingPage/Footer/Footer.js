@@ -1,6 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { selectOneModel } from "../../../Store/Constants";
 
 const Footer = () => {
+
+  const consts = useSelector(selectOneModel)
+  const data = consts?.data?.find((constant)=> constant.key === "phone_number")
+
   return (
     <div className="footer global__bg">
       <div className="container footer__container">
@@ -12,7 +18,7 @@ const Footer = () => {
           <div className="footer__info--wrap">
             <div className="footer__contact">
               <p className="footer__contact__title global__text--color">Bog’lanish:</p>
-              <a style={{textDecoration: "none"}} href="tel:998991454565" className="footer__contact__number global__text--color">+998(99)145-45-65</a>
+              <a style={{textDecoration: "none"}} href="tel:998991454565" className="footer__contact__number global__text--color">  {data?.value}</a>
             </div>
 
             <div className="footer__social-medias">
