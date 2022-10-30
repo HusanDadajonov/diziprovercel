@@ -16,7 +16,7 @@ function AboutProject() {
         <div className="about-project__col">
           <img className='about-project__img' src="../../img/about-project-logo.svg" alt="" />
         </div>
-        <div className='about-project__col global__bg'>
+        <div className='about-project__col'>
           <h2 className='about-project__title global__text--color'>{ABOUT_TITLE?.value}</h2>
           <p className='about-project__desc global__text--color'>{ABOUT_DESCRIPTION?.value}</p>
         </div>

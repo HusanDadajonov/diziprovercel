@@ -96,7 +96,7 @@ export const GlobalStyles = createGlobalStyle`
        background:${props => props.theme.bg} !important
     }
     .about-project__col:nth-child(2){
-        background:${props => props.theme.aboutBg}
+        background:${props => props.theme.aboutBg} !important
     }
     .our-courses__item{
         background:${props => props.theme.cardBg}
