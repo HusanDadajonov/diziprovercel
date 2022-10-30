@@ -179,7 +179,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .about-project__col:nth-child(2){
-        background:${props => props.theme.socialMediaBg};
+        background:${props => props.theme.socialMediaBg} !important;
     }
     
     .MuiAccordionSummary-expandIconWrapper svg{
