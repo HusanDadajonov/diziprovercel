@@ -13,7 +13,7 @@ const LogOut = (props) => {
           },
         }).then(res => {
           localStorage.removeItem('token');
-          router.push('/login')
+          router.push('/https://diziproedu.uz/login')
             console.log(res);
             props.close()
             setIsLoading(false)
