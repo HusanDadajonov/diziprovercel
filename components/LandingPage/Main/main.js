@@ -54,7 +54,7 @@ const Main = () => {
       <InterestingNumbers />
       <Works />
       <OurCourses />
-      <CommentsSlider />
+      {/* <CommentsSlider /> */}
       <FrequentQuestions />
   
     </main>
