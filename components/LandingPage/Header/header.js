@@ -72,8 +72,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="header__item">
-            <Link href="https://diziproedu.uz/login">
-              <a className="header__link-login global__text--color global__border--color" href="https://diziproedu.uz/login">
+            <Link href="/login">
+              <a className="header__link-login global__text--color global__border--color" href="/login">
                 Kirish
               </a>
             </Link>

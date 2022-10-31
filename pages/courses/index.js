@@ -1,6 +1,7 @@
 import SiteHeader from "../../components/SiteHeader";
 import Link from "next/link"
 import Alert from "../../components/Alert";
+
 const Courses = () => {
   return (
     <>

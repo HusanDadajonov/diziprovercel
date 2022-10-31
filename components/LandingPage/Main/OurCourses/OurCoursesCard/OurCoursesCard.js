@@ -19,10 +19,10 @@ function OurCoursesCard({item}) {
             <p className='our-courses__desc global__text--color'>{item?.description}</p> 
         </div>
         <div className='our-courses__wrapper'>
-          <div className='our-courses__info--account'>
+          {/* <div className='our-courses__info--account'>
             <img className='our-courses__info--avatart' src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="user-avatar" />       
             <h3 className='our-courses__info--name global__text--color  '>Andrei Neagoie</h3> 
-          </div>
+          </div> */}
           <button className='global__border--color our-courses__btn global__text--color'>Batafsil ma’lumot</button>
         </div>
 

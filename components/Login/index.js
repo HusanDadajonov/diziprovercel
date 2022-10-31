@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Btn from "../Btn";
-import axios from "../../axios";
+import axios from "axios";
 import { useState } from "react";
 import router from 'next/router'
 import Alert from "../Alert";
@@ -17,8 +17,7 @@ const Login = () => {
       phone_number: phone_number,
       password: password,
     };
-    axios
-      .post("api/users/login", data)
+    axios.post("https://edu.yamo.uz/api/users/login", data)
       .then((res) => {
         console.log(res.data);
         setIsRespondng(false)

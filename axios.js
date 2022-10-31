@@ -1,7 +1,11 @@
 import axios from "axios";
-export const baseUrl="http://137.184.3.22:2020"
+const login = "https://edu.yamo.uz"
+const landing = "https://web.diziproedu.uz"
+
+export const baseUrl=landing
+
 const instance = axios.create({
-  baseURL: baseUrl
+  baseURL: baseUrl,
 });
 
 export default instance;

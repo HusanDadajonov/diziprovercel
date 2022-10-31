@@ -1,7 +1,7 @@
 
 import React, { createContext, useState, useContext, useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
-import api from '../axios';
+import api from 'axios';
 const AuthContext = createContext({});
 import Login from '../components/Login'
 export const AuthProvider = ({ children }) => {
@@ -30,6 +30,34 @@ export const AuthProvider = ({ children }) => {
         }
         loadUserFromCookies()
     }, [])
+
+    useEffect(() => {
+        async function loadUserFromCookies() {
+            const token = window.localStorage.getItem('token')
+            console.log(token)
+            if(!token){
+                router.push('/main')
+            } 
+            else {
+                api.defaults.headers.Authorization = `Bearer ${token}`
+                api.get('https://edu.yamo.uz/api/users/account', {
+                    headers:{
+                        Authorization: `Bearer ${token}`
+                    }
+                }).then((res)=>{
+                    setUser(res.data.data);
+                   console.log(res)
+                   router.push('/courses')
+                }).catch((err)=>{
+                    console.log(err)
+                    router.push('/main')
+                })
+            }
+            setLoading(false)
+        }
+        loadUserFromCookies()
+    }, [])
+
     console.log(user)
     const login = async (email, password) => {
         const { data: token } = await api.post('auth/login', { email, password })
