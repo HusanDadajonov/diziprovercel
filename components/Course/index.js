@@ -41,7 +41,7 @@ const LessonsCourse = () => {
                 {data.map((el, index)=>(
                   <>
                   { el.groups.length ==0 || el.groups[0].group_users.length == 0 ? <>
-                    <li className="courses__item courses__item--locked ">
+                    <li key={index} className="courses__item courses__item--locked ">
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img

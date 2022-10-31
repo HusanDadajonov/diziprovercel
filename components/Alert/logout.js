@@ -29,6 +29,8 @@ const LogOut = (props) => {
       <SweetAlert
         className="log-out"
         show={props.showLogoutModal}
+        title=""
+        onConfirm={()=> {}}
         style={{
           width: "400px",
           height: "192px",
@@ -37,7 +39,7 @@ const LogOut = (props) => {
           borderRadius: "4px",
         }}
         confirmBtnStyle={{ display: "none" }}
-        // confirmBtnText="Ha, chiqish"
+        confirmBtnText="Ha, chiqish"
         onCancel={props.close}
         // cancelBtnText="Ortga qaytish"
       >
