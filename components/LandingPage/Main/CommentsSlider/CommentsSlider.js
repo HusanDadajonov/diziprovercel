@@ -3,10 +3,6 @@ import { useSelector } from "react-redux"
 import instance from "../../../../axios";
 import { testimonials } from "../../../../Store/Testimonials"
 import CommentsSliderItem from "./CommentsSliderItem/CommentsSliderItem"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
 
 function CommentsSlider() {
     const [sliderStyle,setSliderStyle] = useState(236)
@@ -57,7 +53,7 @@ function CommentsSlider() {
             <div>
 
 
-            <Slider  style={{display:"flex"}} {...settings}>
+            {/* <Slider  style={{display:"flex"}} {...settings}>
                 {
                     testimonialsData?.data?.map((item,index) => (
                         <div className="slider-item">
@@ -67,7 +63,7 @@ function CommentsSlider() {
                     ))
                 }
 
-            </Slider> 
+            </Slider>  */}
             
       </div>
            
