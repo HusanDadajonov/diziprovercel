@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import Link from 'next/link'
 import { BsMoonFill } from "react-icons/bs";
 import { HiSun } from "react-icons/hi";

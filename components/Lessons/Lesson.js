@@ -1,5 +1,4 @@
-import { useRouter } from "next/dist/client/router";
-import { useParams } from "react-router-dom";
+
 import SiteHeader from "../SiteHeader";
 import Link from "next/link";
 import router from "next/router";

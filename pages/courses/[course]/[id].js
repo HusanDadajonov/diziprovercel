@@ -1,5 +1,3 @@
-import { useRouter } from "next/dist/client/router";
-import { useParams } from "react-router-dom";
 import SiteHeader from "../../../components/SiteHeader";
 import Link from "next/link";
 const CourseInner = () => {
