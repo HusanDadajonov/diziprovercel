@@ -155,7 +155,7 @@
   }
 }
 
-@media screen and(max-width:850px){
+@media screen and (max-width:850px){
   .footer{
     padding: 40px 0;
 
@@ -178,7 +178,7 @@
   }
 }
 
-@media screen and(max-width:600px){
+@media screen and (max-width:600px){
   .footer{
     &__info--wrap{
       flex-direction: column;
@@ -186,7 +186,7 @@
     }
   }
 }
-@media screen and(max-width:450px){
+@media screen and (max-width:450px){
   .footer{
     &__logo{
       width: 96px;
