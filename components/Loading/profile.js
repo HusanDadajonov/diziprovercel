@@ -17,7 +17,7 @@ const ProfileLoading = ()=>{
                     </div>
                   </div>
 
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a  className="profile__logout-link">Akkauntdan chiqish</a>
                   </Link>
                 </div>

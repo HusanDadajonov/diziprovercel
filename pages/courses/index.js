@@ -12,7 +12,7 @@ const Courses = () => {
             <h1 className="courses__title">Kurslar</h1>
             <ul className="courses__list">
               <li className="courses__item">
-                <Link href="courses/interior-design">
+                <Link legacyBehavior href="courses/interior-design">
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -37,7 +37,7 @@ const Courses = () => {
               </li>
 
               <li className="courses__item courses__item--locked">
-                <Link href={"courses/z-brush"}>
+                <Link legacyBehavior href={"courses/z-brush"}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -63,7 +63,7 @@ const Courses = () => {
               </li>
 
               <li className="courses__item">
-                <Link href={"courses/marvelous"}>
+                <Link legacyBehavior href={"courses/marvelous"}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -89,7 +89,7 @@ const Courses = () => {
               </li>
 
               <li className="courses__item">
-                <Link href={"courses/groffix"}>
+                <Link legacyBehavior href={"courses/groffix"}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -114,7 +114,7 @@ const Courses = () => {
               </li>
 
               <li className="courses__item">
-                <Link href={"courses/animation"}>
+                <Link legacyBehavior href={"courses/animation"}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -139,7 +139,7 @@ const Courses = () => {
               </li>
 
               <li className="courses__item">
-                <Link href={"courses/vr"}>
+                <Link legacyBehavior href={"courses/vr"}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img

@@ -27,7 +27,7 @@ const SiteHeader = ({children}) => {
     <>
     <header className="site-header">
       <div className="site-header__container container">
-        <Link href={"/"}>
+        <Link legacyBehavior href={"/main"}>
           <a className="site-header__logo">
             <img src={router.pathname === "/" ? "../../img/logo.svg" : "../../img/header-logo.svg"} alt="dizipro logo" width="124" height="30"/>
           </a>

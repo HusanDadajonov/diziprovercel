@@ -14,7 +14,7 @@ const Lessons = () => {
   useEffect(() => {
     setIsLoading(true)
     axios
-      .get(`api/courses/my/${router.query.id}`,{
+      .get(`https://edu.yamo.uz/api/courses/my/${router.query.id}`,{
         headers : {
           Authorization : `Bearer ${localStorage.getItem('token')}`
         }
@@ -42,7 +42,7 @@ const Lessons = () => {
         <main>
           <div className="course">
             <div className="course__container container">
-              <Link href={"/"}>
+              <Link legacyBehavior href={"/"}>
                 <a className="course__link-back">Ortga qaytish</a>
               </Link>
 
@@ -56,12 +56,11 @@ const Lessons = () => {
                 <LessonsLoading/></>: <>
                   {data.slice(0, userLesson).map((el, index)=>(
                 <li className="course__item">
-                  <Link href={`/lesson/${el.id}`}> 
-                    <a className="course__link">
+                  <Link legacyBehavior href={`/lesson/${el.id}`}> 
+                    <a zclassName="course__link">
                       <div className="course__item-play">
                         <img
                           className="course__item-img"
-                          src="/img/img.jpg"
                           src={`${baseUrl}uploads/images/${el.image.src}`}
                           // srcSet={`${baseUrl}uploads/images/${el.image.src} 1x, ${baseUrl}uploads/images/${el.image.src} 2x`}
                           alt="interior design"

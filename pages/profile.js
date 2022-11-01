@@ -66,7 +66,7 @@ const Profile = (profile) => {
                         </div>
                       </div>
 
-                      <Link href={"#"}>
+                      <Link legacyBehavior href={"#"}>
                         <a
                           onClick={() => {
                             setShowLogoutModal(true);

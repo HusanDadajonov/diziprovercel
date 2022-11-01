@@ -130,6 +130,7 @@ const Lesson = () => {
 
                 <div className="course-inner-links-wrapper">
                   <Link
+                    legacyBehavior
                     href={
                       prev == null
                         ? `/lesson/${router.query.id}`
@@ -162,6 +163,7 @@ const Lesson = () => {
                   {is_watched ? (
                     <>
                       <Link
+                        legacyBehavior
                         href={
                           next == null
                             ? `/lesson/${router.query.id}`

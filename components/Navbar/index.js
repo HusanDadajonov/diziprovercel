@@ -8,7 +8,7 @@ const Navbar = () => {
         {
           router.pathname === "/posts/[id]" ? 
           <li className={router.pathname == '/posts/[id]' ? "navbar__item navbar__item--active" : "navbar__item "}>
-          <Link href="/">
+          <Link legacyBehavior href="/">
             <a className="navbar__link">
             Maqolalar
             </a>
@@ -16,7 +16,7 @@ const Navbar = () => {
           </li> : null
         }
         <li className= {router.pathname == '/' ? "navbar__item navbar__item--active" : "navbar__item "}>
-          <Link href="/">
+          <Link legacyBehavior href="/">
             <a className="navbar__link">
               Video darslar
             </a>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </li> */}
       </ul>
 
-      <Link href={"/profile"}>
+      <Link legacyBehavior href={"/profile"}>
         <a className="navbar__avatar-link">
           <img
             className="navbar__avatar-img"

@@ -3,7 +3,7 @@ import SiteHeader from "../SiteHeader";
 import Link from "next/link";
 import Alert from "../Alert";
 import axios from "../../axios";
-import { baseUrl } from "../../axios";
+import { baseUrl } from "axios";
 import MainPageLoading from "../Loading";
 const LessonsCourse = () => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const LessonsCourse = () => {
   useEffect(() => {
     setIsLoading(true)
     axios
-      .get("api/courses/my", {
+      .get("https://edu.yamo.uz/api/courses/my", {
         headers : {
           Authorization : `Bearer ${localStorage.getItem('token')}`
         }
@@ -64,7 +64,7 @@ const LessonsCourse = () => {
               </li>
                   </>: <>
                   <li className="courses__item ">
-                <Link href={`lessons/${el.id}`}>
+                <Link legacyBehavior href={`lessons/${el.id}`}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img

@@ -1,6 +1,8 @@
 import SiteHeader from "../../../components/SiteHeader";
 import Link from "next/link";
 
+
+
 const Course = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const Course = () => {
       <main>
         <div className="course">
           <div className="course__container container">
-            <Link href={"/courses"}>
+            <Link legacyBehavior href={"/courses"}>
               <a className="course__link-back">Ortga qaytish</a>
             </Link>
 
@@ -20,7 +22,7 @@ const Course = () => {
 
             <ul className="course__list">
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -41,7 +43,7 @@ const Course = () => {
               </li>
 
               <li className="course__item course__item--locked">
-                <Link href="#">
+                <Link legacyBehavior href="#">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -62,7 +64,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -83,7 +85,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -104,7 +106,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -125,7 +127,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -146,7 +148,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -167,7 +169,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -188,7 +190,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img
@@ -209,7 +211,7 @@ const Course = () => {
               </li>
 
               <li className="course__item">
-                <Link href="interior-design/id">
+                <Link legacyBehavior href="interior-design/id">
                   <a className="course__link">
                     <div className="course__item-play">
                       <img

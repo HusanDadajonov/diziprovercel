@@ -88,7 +88,7 @@ const Login = () => {
               Kirish
             </Btn>
           </form>
-          <Link href={"https://t.me/dizipro_edu"}>
+          <Link legacyBehavior href={"https://t.me/dizipro_edu"}>
             <a className="login__external-link" target={"_blank"}>
               Admin bilan bog'lanish
             </a>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import instance from "../../../axios";
@@ -15,6 +15,8 @@ import Hero from "./Hero/Hero";
 import InterestingNumbers from "./InterestingNumbers/InterestingNumbers";
 import OurCourses from "./OurCourses/OurCourses";
 import Works from "./Works/Works";
+import Router, { useRouter } from 'next/router'
+import api from 'axios';
 
 const Main = () => {
   const dispatch = useDispatch()
@@ -23,7 +25,7 @@ const Main = () => {
   const coursesStatus = useSelector(state => state.get_courses.status);
   const faqsStatus = useSelector(state => state.get_faqs.status);
   const portfoliosStatus = useSelector(state => state.get_portfolios.status)  
-  
+  const router = useRouter() 
  
 
   useEffect(()=> {
@@ -43,6 +45,7 @@ const Main = () => {
       dispatch(getPortfoliosSlice())
     }
   },[constantsStatus, testimonialsStatus, coursesStatus])
+
 
   return (
     <main className="main">

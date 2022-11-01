@@ -39,8 +39,8 @@ const CourseInner = () => {
               </p>
 
               <div className="course-inner-links-wrapper">
-                <Link href={"#"}>
-                  <a className="course-inner__link course-inner__link--previous">
+                <Link legacyBehavior href={"#"}>
+                  <az className="course-inner__link course-inner__link--previous">
                     {/* course-inner__link--disabled */}
                     <svg
                       width="20"
@@ -55,14 +55,14 @@ const CourseInner = () => {
                       />
                     </svg>
                     Oldingi video
-                  </a>
+                  </az>
                 </Link>
 
                 {/* <Link href={"#"}>
                   <a className="course-inner__link course-inner__link--completed">Tugatdim</a>
                 </Link> */}
 
-                <Link href={"#"}>
+                <Link legacyBehavior href={"#"}>
                   <a className="course-inner__link course-inner__link--next">
                     {/* course-inner__link--disabled */}
                     Keyingisi
@@ -86,7 +86,7 @@ const CourseInner = () => {
             <div className="course-inner__other-videos">
               <ul className="course-inner__other-videos-list">
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -114,7 +114,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -142,7 +142,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -170,7 +170,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -198,7 +198,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -226,7 +226,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -254,7 +254,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img
@@ -282,7 +282,7 @@ const CourseInner = () => {
                 </li>
 
                 <li className="course-inner__other-videos-item">
-                  <Link href={"#"}>
+                  <Link legacyBehavior href={"#"}>
                     <a className="course-inner__other-videos-link">
                       <div className="course-inner__other-videos-card">
                         <img

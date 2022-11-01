@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <header style={headerFix ? headerFixStyle : null} className="header">
       <div className="container header__container">
-        <a className="header__logo" href="#"></a>
+        <a className="header__logo" href="/main"></a>
         <ul className="header__list">
           <li className="header__item">
             <button onClick={()=> ChangeThemeHandler(!themeCheck)} className="global__border--color header__theme--btn ">
@@ -63,7 +63,7 @@ const Header = () => {
             </button>
           </li>
           <li className="header__item">
-            <Link href="tel:998991454565">
+            <Link legacyBehavior href="tel:998991454565">
               <a className="header__link--contact global__text--color" href="tel:998991454565">
                 <MdLocalPhone className="header__link--icon" />
                 {data?.value}
@@ -71,7 +71,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="header__item">
-            <Link href="/login">
+            <Link legacyBehavior href="/login">
               <a className="header__link-login global__text--color global__border--color" href="/login">
                 Kirish
               </a>
