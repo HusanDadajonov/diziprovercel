@@ -3,8 +3,8 @@ const LessonsLoading = ()=>{
     const Fake =[1,2,3,4]
     return(
         <>
-        {Fake.map((el)=>(
-            <li className="course__item">
+        {Fake.map((el,index)=>(
+            <li key={index} className="course__item">
                     <a className="course__link">
                       <div className="course__item-play">
                           <Skelet width={297} height={167} />

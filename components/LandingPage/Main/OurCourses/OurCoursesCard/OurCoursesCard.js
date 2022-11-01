@@ -1,5 +1,4 @@
 import React from 'react'
-import { baseUrl } from '../../../../../axios';
 import { AiOutlineClockCircle } from "react-icons/ai";
 
 function OurCoursesCard({item}) {

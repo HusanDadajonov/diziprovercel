@@ -1,7 +1,6 @@
 import Link from "next/link"
 import router from 'next/router'
 const Navbar = () => {
-  console.log(router.pathname,"path")
   return (
     <nav className="navbar">
       <ul className="navbar__list">
@@ -15,8 +14,8 @@ const Navbar = () => {
           </Link>
           </li> : null
         }
-        <li className= {router.pathname == '/' ? "navbar__item navbar__item--active" : "navbar__item "}>
-          <Link legacyBehavior href="/">
+        <li className= {router.pathname == '/courses' ? "navbar__item navbar__item--active" : "navbar__item "}>
+          <Link legacyBehavior href="/courses">
             <a className="navbar__link">
               Video darslar
             </a>

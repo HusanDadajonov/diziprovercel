@@ -22,7 +22,7 @@ const Login = () => {
         console.log(res.data);
         setIsRespondng(false)
         localStorage.setItem('token', res.data.data.token)
-        router.push('/').finally(()=>{
+        router.push('/courses').finally(()=>{
           router.reload()
         })
       })

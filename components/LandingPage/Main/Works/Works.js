@@ -17,7 +17,6 @@ function Works() {
 
     useEffect(()=> {
       window.addEventListener("resize",() => {
-        console.log(window.innerWidth);
         if(window.innerWidth <= 1015 && window.innerWidth >= 700){
           setSmallHeight(181)
           setBigHeight(275)

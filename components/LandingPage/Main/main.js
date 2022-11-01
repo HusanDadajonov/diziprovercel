@@ -26,7 +26,8 @@ const Main = () => {
   const faqsStatus = useSelector(state => state.get_faqs.status);
   const portfoliosStatus = useSelector(state => state.get_portfolios.status)  
   const router = useRouter() 
- 
+  const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(()=> {
     if(constantsStatus === "idle") {
@@ -46,6 +47,32 @@ const Main = () => {
     }
   },[constantsStatus, testimonialsStatus, coursesStatus])
 
+
+  useEffect(() => {
+    async function loadUserFromCookies() {
+        const token = window.localStorage.getItem('token')
+        if(!token){
+            router.push('/main')
+        } 
+        else {
+            api.defaults.headers.Authorization = `Bearer ${token}`
+            api.get('https://edu.yamo.uz/api/users/account', {
+                headers:{
+                    Authorization: `Bearer ${token}`
+                }
+            }).then((res)=>{
+                setUser(res.data.data);
+               console.log(res)
+               router.push('/courses')
+            }).catch((err)=>{
+                console.log(err)
+                router.push('/main')
+            })
+        }
+        setLoading(false)
+    }
+    loadUserFromCookies()
+}, [])
 
   return (
     <main className="main">

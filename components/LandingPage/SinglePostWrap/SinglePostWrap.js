@@ -13,7 +13,6 @@ function SinglePostWrap({id}) {
           console.log(err);
         });
     }, []);
-    console.log(data,'dataSingle');
 
     return (
         <section className='single'>

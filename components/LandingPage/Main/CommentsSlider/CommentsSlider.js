@@ -7,7 +7,6 @@ import CommentsSliderItem from "./CommentsSliderItem/CommentsSliderItem"
 function CommentsSlider() {
     const [sliderStyle,setSliderStyle] = useState(236)
     const testimonialsData = useSelector(testimonials)
-    console.log();
     const [slideIndex,setSlideIndex] = useState(0)
 
     function SamplePrevArrow(props) {

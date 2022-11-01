@@ -1,10 +1,10 @@
 import react, { useState, useEffect } from "react";
-import SiteHeader from "../../components/SiteHeader";
+import SiteHeader from "../SiteHeader";
 import Link from "next/link";
-import axios from "axios";
+import axios from "../../axios";
 import router from "next/router";
 import {baseUrl} from '../../axios'
-import LessonsLoading from "../../components/Loading/lessons";
+import LessonsLoading from "../Loading/lessons";
 const Lessons = () => {
   const [isLoading, setIsLoading]= useState(false)
   const [courseInfo, setCourseInfo]= useState({ name: '' , number: 0 })
@@ -77,7 +77,7 @@ const Lessons = () => {
                       <div className="course__item-play">
                         <img
                           className="course__item-img"
-                          src={`https://edu.yamo.uz/uploads/images/${el.image.src}`}
+                          src={`https://edu.yamo.uz/uploads/images/${el.image.src} `}
                           // src={`${baseUrl}uploads/images/${el.image.src}`}
                           // srcSet={`${baseUrl}uploads/images/${el.image.src} 1x, ${baseUrl}uploads/images/${el.image.src} 2x`}
                           alt="interior design"

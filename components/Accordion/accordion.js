@@ -8,7 +8,6 @@ const Accordion = ({ faq,index }) => {
   const faqsData = useSelector(faqs)
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   // const [accardionActive,setAccardionActive] = useState()
-  console.log(accardionActive,"----", faqsData?.data[index]?.id);
   return (
     <div className={`accordion global__text--color ${isAccordionOpen ? "accardion-open" : ""}`}>
       <AccordionHeader

@@ -1,5 +1,5 @@
 .courses {
-  padding-top: 36px;
+  padding-top: 80px;
 }
 
 .courses__title {
@@ -13,20 +13,20 @@
 }
 
 .courses__list {
-  @include list-unstyled;
-  @include flex-row;
-  align-items: stretch;
+  padding: 0 ;
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: -32px;
 }
 
 .courses__item {
   position: relative;
-  width: 396px;
+  width: 380px;
   margin-right: 36px;
   margin-bottom: 32px;
   background-color: $color-white;
   border-radius: 12px;
+  overflow: hidden;
   transition: 0.4s ease box-shadow;
   // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 

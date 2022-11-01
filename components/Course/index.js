@@ -28,7 +28,6 @@ const LessonsCourse = () => {
         setIsLoading(false)
       });
   },[]);
-  console.log(data)
   return (
     <SiteHeader>
       <main>
@@ -45,10 +44,10 @@ const LessonsCourse = () => {
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
-                        // src={`${baseUrl}uploads/images/${el.image.src}`}
+                        src={`https://edu.yamo.uz/uploads/images/${el.image.src} `}
                         // src="/img/player-bg.png"
                         className="courses__item-img"
-                        srcSet={`${baseUrl}uploads/images/${el.image.src} 1x, ${baseUrl}uploads/images/${el.image.src} 2x`}
+                        srcSet={`https://edu.yamo.uz/uploads/images/${el.image.src} 1x, https://edu.yamo.uz/uploads/images/${el.image.src} 2x`}
                         alt={el.name}
                         width="396"
                         height="230"
@@ -71,7 +70,7 @@ const LessonsCourse = () => {
                         // src={`${baseUrl}uploads/images/${el.image.src}`}
                         // src="/img/player-bg.png"
                         className="courses__item-img"
-                        srcSet={`${baseUrl}uploads/images/${el.image.src} 1x, ${baseUrl}uploads/images/${el.image.src} 2x`}
+                        srcSet={`https://edu.yamo.uz/uploads/images/${el.image.src} 1x, https://edu.yamo.uz/uploads/images/${el.image.src} 2x`}
                         alt={el.name}
                         width="396"
                         height="230"
