@@ -1,4 +1,4 @@
-import Lesson from '../../components/Lessons/Lesson'
+import Lesson from '../../components/Lessons/'
 const Index = ()=>{
     return(
         <>

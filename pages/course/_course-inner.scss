@@ -1,5 +1,5 @@
 .course-inner {
-  padding-top: 54px;
+  padding-top: 100px;
   padding-bottom: 54px;
 }
 
@@ -100,7 +100,7 @@
       width: 20px;
       height: 20px;
       margin-right: 6px;
-      background-image: url("../../../public/img/Vector.png");
+      background-image: url("../../public/img/Vector.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -176,7 +176,7 @@
     width: 32px;
     height: 32px;
     padding: 7px;
-    background-image: url("../../../public/img/icon-play.svg");
+    background-image: url("../../public/img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
@@ -211,7 +211,7 @@
     width: 18px;
     height: 18px;
     margin-right: 5px;
-    background-image: url("../../../public/img/icon-x.svg");
+    background-image: url("../../public/img/icon-x.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -223,7 +223,7 @@
     color: #00964e;
 
     &::before {
-      background-image: url("../../../public/img/icon-completed.svg");
+      background-image: url("../../public/img/icon-completed.svg");
     }
   }
 }
@@ -232,7 +232,7 @@
   width: 20px;
   height: 20px;
   display: block;
-  background-image: url("../../../public/img/icon-options.svg");
+  background-image: url("../../public/img/icon-options.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

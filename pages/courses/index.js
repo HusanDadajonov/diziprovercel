@@ -41,7 +41,7 @@ const LessonsCourse = () => {
                   <div key={index}>
                   { el.groups.length ==0 || el.groups[0].group_users.length == 0 ? <>
                     <li  className="courses__item courses__item--locked ">
-                  <a href={`lessons/${el.id}`} className="courses__link">
+                  <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
                         src={`https://edu.yamo.uz/uploads/images/${el.image.src}`}
@@ -63,7 +63,7 @@ const LessonsCourse = () => {
               </li>
                   </>: <>
                   <li className="courses__item ">
-                <Link legacyBehavior href={`lessons/${el.id}`}>
+                <Link legacyBehavior href={`course/${el.id}`}>
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img

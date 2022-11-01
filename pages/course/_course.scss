@@ -1,5 +1,5 @@
 .course {
-  padding-top: 32px;
+  padding-top: 90px;
 }
 
 .course__link-back {
@@ -16,7 +16,7 @@
     width: 24px;
     height: 24px;
     margin-right: 8px;
-    background-image: url("../../../public/img/icon-arrow-left-grey.svg");
+    background-image: url("../../public/img/icon-arrow-left-grey.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -83,7 +83,7 @@
   }
 
   &--locked .course__item-play::before {
-    background-image: url("../../../public/img/icon-lock.svg");
+    background-image: url("../../public/img/icon-lock.svg");
     cursor: not-allowed;
   }
 
@@ -99,6 +99,7 @@
 .course__link {
   z-index: 200;
   text-decoration: none;
+  text-decoration: none;
 }
 
 .course__item-play {
@@ -111,7 +112,7 @@
     width: 56px;
     height: 56px;
     padding: 15px 17px;
-    background-image: url("../../../public/img/icon-play.svg");
+    background-image: url("../../public/img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;

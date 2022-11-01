@@ -2,7 +2,7 @@
 import SiteHeader from "../SiteHeader";
 import Link from "next/link";
 import router from "next/router";
-import axios from "../../axios";
+import axios from "axios";
 import react, { useState, useEffect } from "react";
 import { baseUrl } from "../../axios";
 import Skelet from "../Skeleton";
@@ -24,7 +24,7 @@ const Lesson = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`api/lessons/my/${router.query.id}`, {
+      .get(`https://edu.yamo.uz/api/lessons/my/${router.query.id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
