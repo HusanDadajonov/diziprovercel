@@ -12,6 +12,8 @@ const StyledApp = styled.div`
 
 function MyApp({ Component, pageProps }) {
 
+  
+
 
   return (
     <Provider store={store}>

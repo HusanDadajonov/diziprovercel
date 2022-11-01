@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 const Header = () => {
   const dispatch = useDispatch()
-  const [headerFix,setHeaderFix] = useState(0)
+  const [headerFix, setHeaderFix] = useState(0)
 
   let ThemeStatus; 
   if (typeof window !== 'undefined') {
@@ -34,6 +34,7 @@ const Header = () => {
   const consts = useSelector(selectOneModel)
   const data = consts?.data?.find((constant)=> constant.key === "phone_number")
   
+
   const headerFixStyle = {
     background:  `${themeCheck ?"rgba(255, 255, 255, 0.2)" : "rgba(13, 13, 13, 0.2)" }`,
     backdropFilter: "blur(7px)"
@@ -66,7 +67,6 @@ const Header = () => {
               <a className="header__link--contact global__text--color" href="tel:998991454565">
                 <MdLocalPhone className="header__link--icon" />
                 {data?.value}
-                {/* {consts.find((constant)=> constant.key === "phone_number")} */}
               </a>
             </Link>
           </li>
@@ -82,6 +82,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

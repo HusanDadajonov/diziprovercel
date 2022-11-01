@@ -8,12 +8,12 @@ import { reducer as PortfoliosSlice } from "./Portfolios"
 
 
 const rootReducer = combineReducers({
-    themeSlice,
     get_constats: ConstantsSlice,
     get_testimonials:TestimonialsSlice,
     get_courses:CoursesSlice,
     get_faqs:FaqsSlice,
-    get_portfolios:PortfoliosSlice
+    get_portfolios:PortfoliosSlice,
+    themeSlice : themeSlice,
 })
 
 export default rootReducer  

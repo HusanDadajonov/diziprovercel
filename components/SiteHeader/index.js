@@ -1,5 +1,5 @@
 import Navbar from "../Navbar";
-import axios from '../../axios'
+import axios from 'axios'
 import Link from "next/link"
 import { useEffect, useState } from "react";
 import router from 'next/router'
@@ -8,7 +8,7 @@ const SiteHeader = ({children}) => {
   // ../../img/header-logo.svg
   const [profile, setProfile]= useState({})
   useEffect(()=>{
-    axios.get('api/users/account',{
+    axios.get('https://edu.yamo.uz/api/users/account',{
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },

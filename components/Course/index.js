@@ -39,9 +39,9 @@ const LessonsCourse = () => {
          {isLoading ? <>
          <MainPageLoading/></>: <>
                 {data.map((el, index)=>(
-                  <>
+                  <div key={index}>
                   { el.groups.length ==0 || el.groups[0].group_users.length == 0 ? <>
-                    <li key={index} className="courses__item courses__item--locked ">
+                    <li  className="courses__item courses__item--locked ">
                   <a className="courses__link">
                     <div className="courses__item-playlist">
                       <img
@@ -85,10 +85,10 @@ const LessonsCourse = () => {
                     <p className="courses__item-name">{el.name}</p>
                   </a>
                 </Link>
-              </li>
+                  </li>
                   </>}
               
-                </>
+                  </div>
                 ))}
          </>}
               {/* courses__item courses__item--locked */}

@@ -33,8 +33,8 @@ const get_constats = createSlice({
         .addCase(getConstantsSlice.fulfilled, (state, action) => {
           state.status = 'succeeded'
           // A fetched posts to the array;
-          state.data = [];
           state.data = state.data.concat(action.payload)
+          console.log(action.payload);
         })
         .addCase(getConstantsSlice.rejected, (state, action) => {
           state.status = 'failed'

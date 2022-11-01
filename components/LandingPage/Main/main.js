@@ -23,6 +23,9 @@ const Main = () => {
   const coursesStatus = useSelector(state => state.get_courses.status);
   const faqsStatus = useSelector(state => state.get_faqs.status);
   const portfoliosStatus = useSelector(state => state.get_portfolios.status)  
+  
+ 
+
   useEffect(()=> {
     if(constantsStatus === "idle") {
       dispatch(getConstantsSlice());
@@ -39,7 +42,7 @@ const Main = () => {
     if(portfoliosStatus === "idle"){
       dispatch(getPortfoliosSlice())
     }
-  },[constantsStatus,testimonialsStatus,coursesStatus])
+  },[constantsStatus, testimonialsStatus, coursesStatus])
 
   return (
     <main className="main">

@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
             } 
             else {
                 api.defaults.headers.Authorization = `Bearer ${token}`
-                api.get('/api/users/account').then((res)=>{
+                api.get('https://edu.yamo.uz/api/users/account').then((res)=>{
                     setUser(res.data.data);
                    console.log(res)
                 }).catch((err)=>{

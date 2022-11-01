@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import axios from "../axios";
+import axios from "axios";
 import Skelet from "../components/Skeleton";
 import LogOut from "../components/Alert/logout";
 import ProfileLoading from "../components/Loading/profile";
@@ -13,7 +13,7 @@ const Profile = (profile) => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("api/users/account")
+      .get("https://edu.yamo.uz/api/users/account")
       .then((res) => {
         console.log(res);
         setUserInfo(res.data.data.user);
